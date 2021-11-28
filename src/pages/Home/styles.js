@@ -8,7 +8,7 @@ export const MainStyled = styled.main`
   height: 78vh;
 
   div {
-    width: 70vw;
+    width: 90vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,7 +17,7 @@ export const MainStyled = styled.main`
     section {
       display: flex;
       flex-direction: column;
-      height: 220px;
+      height: 200px;
       margin: 40px;
       flex-wrap: wrap;
       border: 3px solid transparent;
@@ -27,8 +27,8 @@ export const MainStyled = styled.main`
       border-radius: 15px;
 
       img {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         margin: 0 auto;
         backface-visibility: hidden;
       }
