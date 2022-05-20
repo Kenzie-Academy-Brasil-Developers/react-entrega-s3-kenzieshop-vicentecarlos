@@ -25,12 +25,13 @@ const Login = () => {
     <StyledForm onSubmit={handleSubmit(submitForm)}>
       <fieldset>
         <label>Email:</label>
-        <input placeholder="Digite seu melhor email" {...register("email")}/>
+        <input type="email" placeholder="Digite seu melhor email" {...register("email")}/>
       </fieldset>
       <fieldset>
         <label>Senha:</label>
         <input type="password" {...register("password")}/>
       </fieldset>
+      <button type="submit">Logar</button>
     </StyledForm>
   );
 };
@@ -38,6 +39,17 @@ const Login = () => {
 const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem auto;
+    background-color: #808080;
+    width: 15%;
+    color: white;
+
+    fieldset {
+        border: none;
+        margin: 1rem 0;
+    }
 `
 
 export { Login };
